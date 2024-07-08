@@ -1,0 +1,374 @@
+/* PC */
+@media (min-width: 992px) {
+    .menu-bar {
+        display: none;
+    }
+}
+
+/* ipad and mobile */
+@media (max-width: 991.98px) {
+
+    /*======================= common ======================= */
+    .blog__title,
+    .contact__title,
+    .hero__title,
+    .team__title,
+    .install__title,
+    .about-content__title,
+    .work__title,
+    .services__title {
+        font-size: 3rem;
+    }
+
+    .contact,
+    .blog,
+    .install,
+    .team,
+    .services,
+    .work,
+    .hero,
+    .hero__body {
+        padding: 50px 0;
+        margin: 0;
+    }
+
+    /*======================= nav ======================= */
+    .navbar {
+        display: none;
+    }
+
+    .header__menu {
+        display: block;
+    }
+
+    .menu__icon {
+        height: 25px;
+        width: 25px;
+        object-fit: cover;
+        margin-right: 90px;
+        cursor: pointer;
+    }
+
+    .overlay {
+        position: fixed;
+        inset: 0;
+        z-index: 1;
+        background-color: #575f666c;
+        transition: .3s;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    #click__menu:checked+.overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-bar__container {
+        padding: 40px;
+    }
+
+    .menu-bar {
+        width: 300px;
+        height: 100%;
+        background-color: #10375C;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        transform: translateX(-100%);
+        transition: 0.3s;
+    }
+
+    #click__menu:checked~.menu-bar {
+        transform: translateX(0);
+    }
+
+    .menu-bar__top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu-bar__icon {
+        height: 25px;
+        width: 25px;
+        object-fit: cover;
+        cursor: pointer;
+    }
+
+    #menu-bar__list .navbar__list {
+        display: block;
+        margin-top: 30px;
+    }
+
+    #menu-bar__list .navbar__select::before {
+        display: none;
+    }
+
+    #menu-bar__list .navbar__item,
+    .show__on--mobile .navbar__item {
+        padding: 12px;
+        border-radius: 3px;
+    }
+
+    #menu-bar__list .navbar__item:hover,
+    .show__on--mobile .navbar__item:hover {
+        background-color: #2E80CE;
+        cursor: pointer;
+    }
+
+    #menu-bar__list .navbar__item:hover .navbar__link {
+        text-shadow: 1px 0 currentColor;
+    }
+
+    /*======================= hero ======================= */
+    .hero__body {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 40px;
+    }
+
+    .hero__left {
+        width: 80%;
+        text-align: center;
+        order: 1;
+    }
+
+    .hero__contact {
+        justify-content: center;
+    }
+
+    .hero__imgs {
+        justify-content: center;
+    }
+/* hello */
+    /*======================= services ======================= */
+    .services-introduce {
+        flex-direction: column;
+    }
+
+    .services-introduce__btn {
+        margin-top: 25px;
+        margin: 0 auto;
+    }
+
+    /*======================= work ======================= */
+    .work__describe {
+        margin: 25px auto 0;
+        text-align: center;
+    }
+
+    .work__title {
+        text-align: center;
+    }
+
+    .work__list {
+        flex-direction: column;
+        row-gap: 25px;
+    }
+
+    .work-item {
+        padding: 20px;
+        min-width: 200px;
+    }
+
+    .work-item__title {
+        font-size: 2.6rem;
+    }
+
+    /*======================= about ======================= */
+    .about__body {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .about__imgs {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .about__img1 {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .about__img2 {
+        display: none;
+    }
+
+    .about-content {
+        width: 80%;
+        text-align: center;
+    }
+
+    .about__btn {
+        margin: 25px auto 0;
+    }
+
+    .about-content__title {
+        margin-top: 35px;
+    }
+
+    /*======================= team ======================= */
+    .team-list {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .team-item__avt {
+        height: 135%;
+        width: 145%;
+    }
+
+    /*======================= install ======================= */
+    .install__imgs {
+        display: none;
+    }
+
+    /*======================= blog ======================= */
+    .blog__body {
+        flex-direction: column;
+    }
+
+    .blog__block {
+        width: 80%;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .blog__buttons {
+        justify-content: center;
+        margin: 25px 0;
+    }
+
+    /*======================= contact ======================= */
+}
+
+/* ipad */
+@media (min-width: 768px) and (max-width:991.98px) {
+    .footer__top {
+        grid-template-columns: 0.5fr 0.5fr 2fr;
+    }
+
+    .footer__top .footer-column:first-child {
+        display: none;
+    }
+
+    .show__on--mobile {
+        display: none;
+    }
+}
+
+/* mobile */
+@media (max-width: 767.98px) {
+    /*======================= common ======================= */
+    .blog__title,
+    .contact__title,
+    .hero__title,
+    .team__title,
+    .install__title,
+    .about-content__title,
+    .work__title,
+    .services__title {
+        font-size: 3rem;
+    }
+    .contact__describe,
+    .hero__describe,
+    .install__describe,
+    .contact__describe,
+    .work__describe,
+    .services__describe {
+        font-size: 2rem;
+        width: 100%;
+    }
+    /*======================= header ======================= */
+    .header__action {
+        display: none;
+    }
+
+    .header__in-mobile {
+        display: flex;
+        flex-direction: column;
+        padding: 12px;
+        border-radius: 3px;
+        gap: 5px;
+    }
+
+    .show__on--mobile .navbar__item {
+        list-style: none;
+    }
+    /*======================= hero ======================= */
+    .hero__body{
+        padding: 0;
+    }
+    
+    .hero__img2{
+        display: none;
+    }
+    .hero__title{
+        margin-top: 25px;
+    }
+
+    .hero__contact{
+        flex-direction: column;
+    }
+    /*======================= services ======================= */
+    .services-introduce__img{
+        width: 100%;
+        height: auto;
+    }
+    .services-introduce{
+        gap: 60px;
+    }
+    .services-introduce__btn{
+        margin: 0 auto;
+    }
+    .services-introduce__block{
+        width: 100%;
+        height: auto;
+        margin-top: 25px;
+    }
+    /*======================= about ======================= */
+    .about__img1{
+        width: 100%;
+        height: auto;
+    }
+    .about{
+        padding: 60px 0;
+    }
+    /*======================= about ======================= */
+    .team-list{
+        grid-template-columns: 1fr;
+        row-gap: 55px;
+    }
+
+    /*======================= install ======================= */
+    .install-content__imgs {
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+    }
+    .install-content,.install__title{
+        text-align: center;
+    }
+
+    /*======================= blog ======================= */
+    .blog-list{
+        grid-template-columns: 1fr;
+        row-gap: 55px;
+    }
+    /*======================= contact ======================= */
+    .contact__body{
+        padding: 60px 0;
+    }
+    /*======================= footer ======================= */
+    .footer__top{
+        grid-template-columns: 1fr;
+    }
+    .footer-mobile{
+        display: flex;
+        flex-direction: column;
+    }
+}
